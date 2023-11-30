@@ -125,6 +125,7 @@ public class CRUDController implements Initializable{
     }
     
     private void insertRecord(){
+        // Pastikan semua field tidak kosong
         if (isEmptyTextField()) {
             showAlert("Peringatan", "Isian Tidak Lengkap", "Silakan isi semua kolom.");
             return;
