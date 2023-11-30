@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_jdbc.CRUDController">
+   <children>
+      <TableView fx:id="tvData" layoutX="309.0" layoutY="81.0" prefHeight="305.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="colNpm" prefWidth="99.33329772949219" text="NPM" />
+          <TableColumn fx:id="colNama" prefWidth="220.66677856445312" text="Nama" />
+            <TableColumn fx:id="colAlamat" prefWidth="105.9998779296875" text="Alamat" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="81.0" text="NPM" />
+      <Label layoutX="280.0" layoutY="14.0" text="Data Mahasiswa">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="117.0" text="Nama" />
+      <Label layoutX="14.0" layoutY="154.0" text="Alamat" />
+      <TextField fx:id="tfNpm" layoutX="77.0" layoutY="77.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="tfNama" layoutX="77.0" layoutY="113.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="tfAlamat" layoutX="77.0" layoutY="150.0" prefHeight="25.0" prefWidth="183.0" />
+      <Button fx:id="btnInsert" layoutX="20.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Insert" />
+      <Button fx:id="btnUpdate" layoutX="113.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+      <Button fx:id="btnDelete" layoutX="208.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+   </children>
+</AnchorPane>
